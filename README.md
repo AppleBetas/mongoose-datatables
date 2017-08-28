@@ -59,6 +59,7 @@ app.post('/table', (req, res) {
 * `options.sort` (Object) - Specifies the order in which the query returns matching documents.
 * `options.search` (Object) - Search.
 * `options.populate` (Object) - Specifies models to populate.
+* `options.processor` (Function) - A function called that allows you to return custom data for each Mongoose document. It has two parameters, the first being the item's data retrieved by mongoose-dataTables, and the other being the item itself.
 
 ## License
 MIT 
